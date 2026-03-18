@@ -35,7 +35,7 @@ const courses = [
     image: courseUxDesign,
     title: "Create Amazing Color Schemes for Your UX Design Projects",
     instructor: "Pamela Foster",
-    category: "Science",
+    category: "Design",
     price: 420.0,
     rating: 4.9,
     duration: "08 hr 15 mins",
@@ -45,7 +45,7 @@ const courses = [
     image: courseLeadership,
     title: "Culture & Leadership: Strategies for a Successful Culture",
     instructor: "Rose Simmons",
-    category: "Science",
+    category: "Business",
     price: 295.0,
     originalPrice: 340.0,
     rating: 4.9,
@@ -93,13 +93,12 @@ const CoursesSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-            All Courses of{" "}
-            <span className="text-primary">SkillBridge</span>
+            Explore <span className="text-primary">Coursevia</span> Courses
           </h2>
           <div className="relative max-w-sm w-full">
             <input
               type="text"
-              placeholder="Search your course"
+              placeholder="Search courses..."
               className="w-full bg-card border border-border rounded-lg pl-4 pr-10 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors duration-150"
             />
             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-primary-foreground p-1.5 rounded-md">
@@ -138,7 +137,7 @@ const CoursesSection = () => {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" className="rounded-full px-8">
-            Other Courses
+            View All Courses
           </Button>
         </div>
       </div>
