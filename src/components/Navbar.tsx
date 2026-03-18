@@ -8,23 +8,23 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "All Courses", href: "/courses" },
+    { label: "Courses", href: "/courses" },
+    { label: "Business Videos", href: "/videos" },
     { label: "Find a Coach", href: "/coaches" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/contact" },
+    { label: "Pricing", href: "/pricing" },
   ];
 
   return (
     <>
       <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-medium">
-        All courses 28% off for new learners 🎉
+        🎓 New on Coursevia? Get 28% off your first course — limited time only!
       </div>
       <header className="sticky top-0 z-50 bg-card border-b border-border backdrop-blur-sm">
         <div className="container mx-auto flex items-center justify-between h-16 px-4">
           <Link to="/" className="flex items-center gap-2">
             <GraduationCap className="h-8 w-8 text-primary" />
             <span className="font-display text-xl font-bold text-foreground">
-              Skill<span className="text-primary">Bridge</span>
+              Course<span className="text-primary">via</span>
             </span>
           </Link>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
             <Button variant="ghost" size="sm">
               Sign In
             </Button>
-            <Button size="sm">Sign Up</Button>
+            <Button size="sm">Get Started</Button>
           </div>
 
           <button
@@ -69,7 +69,7 @@ const Navbar = () => {
             ))}
             <div className="flex gap-3 pt-3 border-t border-border">
               <Button variant="ghost" size="sm" className="flex-1">Sign In</Button>
-              <Button size="sm" className="flex-1">Sign Up</Button>
+              <Button size="sm" className="flex-1">Get Started</Button>
             </div>
           </div>
         )}
